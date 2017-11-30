@@ -1,0 +1,86 @@
+$col-1-width: 30%;
+$col-2-width: 100% - $col-1-width;
+
+body {
+  height: 100%;
+}
+
+.title {
+  width: 100%;
+  font-size: 3em;
+  font-weight: bold;
+  border: solid black 1px;
+}
+
+.column {
+  float:left;
+  padding: 10px;
+
+  &.list {
+    width: $col-1-width;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  &.details {
+    width: $col-2-width;
+  }
+}
+
+.contact {
+  .row {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+#contact-list{
+  width: 33%;
+  float: left;
+}
+
+#contact-details{
+  box-shadow: -1px 0 1px #777;
+  width: 66%;
+  float: right;
+  padding-left: 3px;
+}
+
+#contact-image{
+  float: left;
+  display: inline;
+  padding-right: 7px;
+}
+
+#contact-list a{
+  text-decoration: none;
+  color: #000;
+}
+
+#firstName{
+  display: inline;
+  text-decoration: none;
+}
+
+#lastName{
+  display: inline;
+  padding-left: 4px;
+}
+
+#firstName-large{
+  display: inline;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#lastName-large{
+  display: inline;
+  padding-left: 7px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
